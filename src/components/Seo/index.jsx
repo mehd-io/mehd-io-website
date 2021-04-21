@@ -42,11 +42,6 @@ function SEO({
           Config.pathPrefix,
           path,
         );
-        const metaImageUrl = Utils.resolveUrl(
-          Config.siteUrl,
-          imageUrl || data.file.childImageSharp.fixed.src,
-        );
-
         return (
           <Helmet
             title={title} // Page title
@@ -59,7 +54,6 @@ function SEO({
                 { property: 'og:type', content: contentType || 'website' },
                 { property: 'og:url', content: pageUrl },
                 { property: 'og:description', content: description },
-                { property: 'og:image', content: metaImageUrl },
                 { property: 'og:image:alt', content: description },
                 { property: 'og:site_name', content: Config.siteTitle },
                 { property: 'og:locale', content: lang || 'en_US' },
@@ -67,7 +61,6 @@ function SEO({
                 { name: 'twitter:card', content: 'summary_large_image' },
                 { name: 'twitter:title', content: title },
                 { name: 'twitter:description', content: description },
-                { name: 'twitter:image', content: metaImageUrl },
                 { name: 'twitter:image:alt', content: description },
                 { name: 'twitter:site', content: Config.author },
                 { name: 'twitter:creator', content: Config.author },
