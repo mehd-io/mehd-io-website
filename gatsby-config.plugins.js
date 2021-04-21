@@ -7,10 +7,9 @@ module.exports = [
   'gatsby-plugin-less',
   'gatsby-plugin-offline',
   {
-    resolve: 'gatsby-source-filesystem',
+    resolve: 'gatsby-source-medium',
     options: {
-      name: 'images',
-      path: `${__dirname}/src/images`,
+      username: '@mehdio',
     },
   },
   {
@@ -25,13 +24,6 @@ module.exports = [
       icon: 'src/images/logosmall-mehdio.png', // This path is relative to the root of the site.
       legacy: true, // this will add apple-touch-icon links to <head>. Required for
       // versions prior to iOS 11.3.
-    },
-  },
-  {
-    resolve: 'gatsby-source-filesystem',
-    options: {
-      name: 'markdown-pages',
-      path: `${__dirname}/content`,
     },
   },
   {
