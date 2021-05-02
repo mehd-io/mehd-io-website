@@ -5,7 +5,7 @@ import 'font-awesome/less/font-awesome.less';
 import style from './header.module.less';
 import '../../../styles/global.less';
 import { useWindowSize } from '../../../utils/hooks';
-
+import FeatherIcon from 'feather-icons-react';
 
 export default () => {
   const [menu, setMenu] = useState(false);
@@ -34,12 +34,22 @@ export default () => {
           <ul className={style.nav}>
             <li className={style.navItem}>
               <Link to="/" onClick={toggleMenu} activeClassName={style.anchorActive}>
-                About
+                <FeatherIcon size="19" icon="info" /> About
               </Link>
             </li>
             <li className={style.navItem}>
               <Link to="/blog" onClick={toggleMenu} activeClassName={style.anchorActive}>
-                Blog
+                <FeatherIcon size="19" icon="book" /> Blog
+              </Link>
+            </li>
+            <li className={style.navItem}>
+              <Link to="/project" onClick={toggleMenu} activeClassName={style.anchorActive}>
+                <FeatherIcon size="19" icon="code" /> Projects
+              </Link>
+            </li>
+            <li className={style.navItem}>
+              <Link to="/music" onClick={toggleMenu} activeClassName={style.anchorActive}>
+                <FeatherIcon size="19" icon="music" /> Music
               </Link>
             </li>
           </ul>
