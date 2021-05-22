@@ -47,7 +47,7 @@ Blog.propTypes = {
 
 export const query = graphql`
   {
-    allMediumPost(sort: { fields: [createdAt], order: DESC }, limit: 4) {
+    allMediumPost(sort: { fields: [createdAt], order: DESC }, limit: 10) {
         edges {
           node {
             id
