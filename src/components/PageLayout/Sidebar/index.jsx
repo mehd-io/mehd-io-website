@@ -13,6 +13,7 @@ import {
   TwitterOutlined,
   MediumOutlined,
   GithubOutlined,
+  YoutubeOutlined,
   MailOutlined
 } from '@ant-design/icons';
 
@@ -25,7 +26,7 @@ const IconFont = createFromIconfontCN({
 
 const { Content } = Layout;
 const {
-  github, linkedin, twitter, medium, spotify
+  youtube, github, linkedin, twitter, medium
 } = Config.social;
 
 const DomContent = () => (
@@ -41,9 +42,10 @@ const DomContent = () => (
       </div>
       <div className={`${style.badge} ${style.badgeGray}`}>Data Engineer</div>
       <div className={`centerAlign box ${style.iconeBox}`}>
-        <div className={style.icone}><a href={github} target="_blank" label="button" rel="noopener noreferrer"><GithubOutlined /></a></div>
-        <div className={style.icone}><a href={linkedin} target="_blank" label="button" rel="noopener noreferrer"><LinkedinOutlined /></a></div>
+        <div className={style.icone}><a href={youtube} target="_blank" label="button" rel="noopener noreferrer"><YoutubeOutlined /></a></div>
         <div className={style.icone}><a href={medium} target="_blank" label="button" rel="noopener noreferrer"><MediumOutlined /> </a></div>
+        <div className={style.icone}><a href={linkedin} target="_blank" label="button" rel="noopener noreferrer"><LinkedinOutlined /></a></div>
+        <div className={style.icone}><a href={github} target="_blank" label="button" rel="noopener noreferrer"><GithubOutlined /></a></div>
         <div className={style.icone}><a href={twitter} target="_blank" label="button" rel="noopener noreferrer" ><TwitterOutlined /></a></div>
       </div>
       <ul className={`box ${style.badge} contactBlock`}>
