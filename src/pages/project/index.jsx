@@ -22,11 +22,11 @@ const ProjectData = [
     desc: 'Country-level geo and population data.',
   },
   {
-    img: '/project/amaaai.jpg',
-    date: '10/2020',
-    name: 'AMAAAI!',
-    url: 'https://amaaai.com',
-    desc: 'Founder of a small collectif of passionate, creative and funny software engineers that ships side projects together',
+    img: '/project/datacreators.jpg',
+    date: '06/2022',
+    name: 'Data Creators Club',
+    url: 'https://datacreators.club',
+    desc: 'Learn from data content creators on your favorite platform !',
   },
 ];
 

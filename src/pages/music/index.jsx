@@ -45,7 +45,6 @@ const Music = () => (
         <b>Music</b> has always been an important part of my life. Over the past years I've participated to a couple of music projects, studio sessions and live shows (+40).
           I enjoy listening and playing a large variety of music, from old to modern. Here are some of the projects were I am/was the most involved, doing <b>songwritting, vocal, guitar and music production.</b>
         </p>
-        <p> While I didn't release anything since 2019, be prepared for something new in 2021 🎵 !</p>
         <Row gutter={[40, 20]}>
           {
             MusicData.map((val) => (
