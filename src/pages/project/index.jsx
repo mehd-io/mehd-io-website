@@ -11,7 +11,7 @@ const ProjectData = [
     img: '/project/project_techskills.png',
     date: '12/2020',
     name: 'Data Skills Radar',
-    url: 'http://dataskillsradar.amaaai.com/',
+    url: 'http://dataskills.mehd.io/',
     desc: 'Get technical skills insights from data job ads scanned daily',
   },
   {
